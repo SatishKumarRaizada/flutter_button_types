@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.0.2
 
-This is the initial release of the all the Flutter button combination
+Added example to better understanding

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FlutterTextButton extends StatefulWidget {
+class FlutterTextButton extends StatelessWidget {
   final String buttonText;
   final Function onTap;
   final Color? textColor;
   final Color? buttonColor;
   final double buttonWidth;
   final double buttonHeight;
+  final double textSize;
 
   const FlutterTextButton({
     Key? key,
@@ -16,27 +17,26 @@ class FlutterTextButton extends StatefulWidget {
     this.buttonColor = Colors.blue,
     this.buttonHeight = 45.00,
     this.buttonWidth = 300.00,
+    this.textSize = 16,
   }) : super(key: key);
 
-  @override
-  State<FlutterTextButton> createState() => _FlutterTextButtonState();
-}
-
-class _FlutterTextButtonState extends State<FlutterTextButton> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        backgroundColor: widget.buttonColor,
-        minimumSize: Size(widget.buttonWidth, widget.buttonHeight),
+        backgroundColor: buttonColor,
+        minimumSize: Size(buttonWidth, buttonHeight),
         primary: Colors.white,
       ),
       onPressed: () {
-        widget.onTap();
+        onTap();
       },
       child: Text(
-        widget.buttonText,
-        style: TextStyle(color: widget.textColor),
+        buttonText,
+        style: TextStyle(
+          color: textColor,
+          fontSize: textSize,
+        ),
       ),
     );
   }

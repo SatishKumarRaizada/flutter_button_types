@@ -15,7 +15,7 @@ This is super cool package gives you all the button types in Flutter with beauti
 
 ## Features
 
-This package gives you beautiful buttons with minimal code base into your application.
+This package gives you powerful buttons with minimal code base into your application.
 
 ## Getting started
 
@@ -23,7 +23,7 @@ Import the package and enjoy the different flutter buttons.
 
 ## Usage
 
-There are number of textfield property that you can use and modify:
+It gives you bunch of button that you can use into your project, like:
 
 - TextButton
 - OutlinedButton
