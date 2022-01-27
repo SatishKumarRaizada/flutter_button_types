@@ -46,9 +46,38 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             FlutterTextButton(
               buttonText: 'Text Button',
-              textSize: 40,
+              buttonHeight: _height * 0.2,
               onTap: () {},
             ),
+            SizedBox(height: _height * 0.02),
+            FlutterCircleButton(
+              buttonColor: Colors.pink,
+              buttonBorderColor: Colors.transparent,
+              buttonIcon: const Icon(
+                Icons.camera_alt,
+                size: 60,
+              ),
+              onTap: () {},
+            ),
+            SizedBox(height: _height * 0.02),
+            FlutterIconButton(
+              buttonText: 'Take Picture',
+              buttonColor: Colors.green,
+              buttonIcon: const Icon(Icons.camera_alt),
+              onTap: () {},
+            ),
+            SizedBox(height: _height * 0.02),
+            FlutterOutlineIconButton(
+              buttonText: 'Take Picture',
+              buttonIcon: const Icon(Icons.camera_alt),
+              onTap: () {},
+            ),
+            SizedBox(height: _height * 0.02),
+            FlutterCircleButton(
+              buttonIcon: const Icon(Icons.camera_alt),
+              onTap: () {},
+            ),
+            SizedBox(height: _height * 0.02),
           ],
         ),
       ),
